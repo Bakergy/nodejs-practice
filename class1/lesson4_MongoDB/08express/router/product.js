@@ -35,10 +35,10 @@ router.get('/', async (req, res, next) => {
 
 router.get('/:id', async (req, res, next) => {
   const id = req.params.id;
-  const { current } = req.query;
+  const { currency } = req.query;
   try {
     let product = await findProduct(id)
-    if (!!current) {
+    if (!!currency) {
       res.json({
         id: product.id,
         name: product.name,
