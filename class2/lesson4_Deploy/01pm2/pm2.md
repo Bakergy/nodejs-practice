@@ -1,7 +1,6 @@
 # pm2
 ## install
 * globle: npm install pm2 -g 
-* project: npm install pm2 -s
 
 ## method
 * start: `pm2 start app.js`
